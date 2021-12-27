@@ -4,9 +4,40 @@
     <title>Введение в HTML5</title>
     <meta charset="UTF-8">
 </head>
+<style>
+    table {
+        border: 1px solid orange;
+        border-spacing: 0;
+    }
+
+    td {
+        border: 1px solid orange;
+    }
+
+    tbody th {
+        border: 1px solid orange;
+        border-top: 3px solid orange;
+    }
+</style>
 <body>
     <div>
         <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
+        <table width="100%" border="2px">
+            <tr>
+                <td>
+                    <img
+                            src="./images/logo-black.png"
+                            srcset="./images/logo-black@2x.png 2x, ./images/logo-black@4x.png 4x"
+                            alt="логотип">
+
+                </td>
+                <td align="right">DECEMBER 2021</td>
+            </tr>
+        </table>
+        <img
+                src="./images/human.png"
+                srcset="./images/human@2x.png 2x"
+                alt="человек">
         <button>REGISTER</button>
     </div>
     <div>
@@ -37,6 +68,42 @@
     </div>
     <div>
         <h2>WHO</h2>
+        <table>
+            <caption>Цены на флагманские модели IPhone и Xiaomi</caption>
+            <tbody>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Модель</th>
+                    <th>Цена</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">IPhone</td>
+                    <td>12 Pro</td>
+                    <td>$999</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>$799</td>
+                </tr>
+                <tr>
+                    <td>12 mini</td>
+                    <td>$699</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Xiaomi</td>
+                    <td>Mi 10</td>
+                    <td>$768</td>
+                </tr>
+                <tr>
+                    <td>Black Shark 3 128 Gb</td>
+                    <td>$529</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <th align="left" colspan="2">Средняя цена:</th>
+            <th>$758.8</th>
+            </tfoot>
+        </table>
         <button>REGISTER</button>
     </div>
     <div>
