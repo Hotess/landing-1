@@ -1,0 +1,20 @@
+@import './__unimportant/header__unimportant';
+@import './__greeting/header__greeting';
+@import './__models/header__models';
+@import './__model/header__model';
+@import './__model-name/header__model-name';
+@import './__title/header__title';
+@import './__human-image/header__human-image';
+@import './__title-name-sup/header__title-name-sup';
+@import './__title-name-center/header__title-name-center';
+@import './__title-name-sub/header__title-name-sub';
+
+.header {
+    background: url("./../../access/images/bg/bg_orange.png"), linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)) no-repeat;
+    background-size: cover;
+    height: 795px;
+    padding: 60px 130px 0;
+    box-sizing: border-box;
+    color: white;
+    user-select: none;
+}

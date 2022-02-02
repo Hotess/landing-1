@@ -1,0 +1,11 @@
+@import './__ol/ready__ol';
+@import './__list/ready__list';
+@import './__heading/ready__heading';
+@import './__description/ready__description';
+
+.ready {
+    min-height: 795px;
+    background: url("./../../access/images/bg/bg_orange.png"), linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)) no-repeat;
+    background-size: cover;
+    padding-bottom: 130px;
+}

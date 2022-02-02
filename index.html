@@ -3,131 +3,235 @@
 <head>
     <title>Введение в HTML5</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link href="./pages/styles/index.css" rel="stylesheet">
 </head>
-<style>
-    table {
-        border: 1px solid orange;
-        border-spacing: 0;
-    }
-
-    td {
-        border: 1px solid orange;
-    }
-
-    tbody th {
-        border: 1px solid orange;
-        border-top: 3px solid orange;
-    }
-</style>
-<body>
-    <div id="one">
-        <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
-        <table width="100%" border="2px">
-            <tr>
-                <td>
-                    <img
-                            src="./images/logo-black.png"
-                            srcset="./images/logo-black@2x.png 2x, ./images/logo-black@4x.png 4x"
-                            alt="логотип">
-
-                </td>
-                <td align="right">DECEMBER 2021</td>
-            </tr>
-        </table>
-        <img
-                src="./images/human.png"
-                srcset="./images/human@2x.png 2x"
-                alt="человек">
-        <button>REGISTER</button>
+<body class="body">
+<header class="header">
+    <div class="header__unimportant">
+        <div class="logo">
+            <img src="./access/images/logo/logo_white.svg"
+                 alt="Логотип"
+                 class="logo__image"/>
+        </div>
+        <span class="section__month section__month_theme_white">February 2022</span>
     </div>
-    <div id="two">
-        <h2>WORKSHOP</h2>
-        <p>We're launching a series of practical workshops on development in January 2020. We'll
-            teach you how to know your way around software, share the latest news, and help to start.</p>
-        <p>First workshop will familiarize you with cross-platform mobile development toolkit called
-            Flutter. Join if you're aspiring to learn how to develop mobile apps and master new
-            tools, but unsure what to start with.</p>
-    </div>
-    <div id="three">
-        <h2>WHEN AND WHERE</h2>
-        <div>
-            <div>
-                <h3>Where</h3>
-                <p>Moscow, office</p>
+    <div class="header__greeting">
+        <div class="header__models">
+            <div class="header__model">
+                <img src="./access/images/ios.svg" alt="IOS" class="header__model-image"/>
+                <span class="header__model-name">IOS</span>
             </div>
-            <div>
-                <h3>About the course</h3>
-                <p>Duration: 2 weeks.</p>
-                <p>Comprises 4 2-hour modules twice a week.</p>
-            </div>
-            <div>
-                <h3>When</h3>
-                <p>DECEMBER 2021</p>
+            <div class="header__model">
+                <img src="./access/images/android.svg" alt="Android" class="header__model-image"/>
+                <span class="header__model-name">Android</span>
             </div>
         </div>
+        <h1 class="header__title">
+            <span class="header__title-name-sup">CHOOSE</span>
+            <span class="header__title-name-center">FLUTTER</span>
+            <span class="header__title-name-sub">TO CHOOSE BOTH</span>
+        </h1>
+        <img src="./access/images/human/human.png"
+             srcset="./access/images/human/human@2x.png 2x, ./access/images/human/human@4x.png 4x"
+             alt="Человек" class="header__human-image"/>
+        <button aria-label="Регистрация" class="section__button-register section__button-register_place_content">
+            REGISTER
+        </button>
     </div>
-    <div id="four">
-        <h2>WHO</h2>
-        <table>
-            <caption>Цены на флагманские модели IPhone и Xiaomi</caption>
-            <tbody>
-                <tr>
-                    <th>Производитель</th>
-                    <th>Модель</th>
-                    <th>Цена</th>
-                </tr>
-                <tr>
-                    <td rowspan="3">IPhone</td>
-                    <td>12 Pro</td>
-                    <td>$999</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>$799</td>
-                </tr>
-                <tr>
-                    <td>12 mini</td>
-                    <td>$699</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Xiaomi</td>
-                    <td>Mi 10</td>
-                    <td>$768</td>
-                </tr>
-                <tr>
-                    <td>Black Shark 3 128 Gb</td>
-                    <td>$529</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            <th align="left" colspan="2">Средняя цена:</th>
-            <th>$758.8</th>
-            </tfoot>
-        </table>
-        <button>REGISTER</button>
+</header>
+<main class="main">
+    <section class="section workshop">
+        <h2 class="section__title section__title_type_workshop">WORKSHOP</h2>
+        <button class="section__button-register section__button-register_place_header section__button-register_type_workshop">
+            REGISTER
+        </button>
+        <div class="section__text">
+            <p class="section__paragraph">
+                We're launching a series of practical workshops on development in January 2020. We'll teach you how to
+                know
+                your way around software, share the latest news, and help to start.
+            </p>
+            <p class="section__paragraph">
+                First workshop will familiarize you with cross-platform mobile development toolkit called Flutter. Join
+                if
+                you're aspiring to learn how to develop mobile apps and master new tools, but unsure what to start with.
+            </p>
+        </div>
+        <div class="workshop__table">
+            <article class="workshop__cell">
+                <img src="./access/images/human/idea.png"
+                     srcset="./access/images/human/idea@2x.png 2x, ./access/images/human/idea@4x.png 4x" alt="idea"
+                     class="workshop__image"/>
+                <h3 class="workshop__heading">ABOUT WHAT</h3>
+                <p class="workshop__description">
+                    Platform perks, intro to Dart language and creating your own apps. Bonus: intro to (fantastic)
+                    animation.
+                </p>
+            </article>
+            <article class="workshop__cell">
+                <img src="./access/images/human/way.png"
+                     srcset="./access/images/human/way@2x.png 2x, ./access/images/human/way@4x.png 4x" alt="way"
+                     class="workshop__image"/>
+                <h3 class="workshop__heading">FOR WHOM</h3>
+                <p class="workshop__description">
+                    Students and IT professionals that try to decide if they want to work with mobile app development
+                    fast.
+                </p>
+            </article>
+            <article class="workshop__cell">
+                <img src="./access/images/human/like.png"
+                     srcset="./access/images/human/like@2x.png 2x, ./access/images/human/like@4x.png 4x" alt="like"
+                     class="workshop__image"/>
+                <h3 class="workshop__heading">WHY</h3>
+                <p class="workshop__description">
+                    To cover cross-platform development bases quickly. Understand pros and cons if it is using workshop
+                    format.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="section location">
+        <div class="header__unimportant">
+            <img src="./access/images/logo/logo_white.svg" alt="Логотип"/>
+            <h2 class="section__title section__title_theme_white">WHEN AND WHERE</h2>
+            <button class="section__button-register section__button-register_place_header section__button-register_theme_white">
+                REGISTER
+            </button>
+        </div>
+        <div class="overlay overlay_type_location">
+            <div class="location__block">
+                <div class="location__content">
+                    <h3 class="location__heading">Where</h3>
+                    <span class="location__line">Moscow, office</span>
+                    <span class="location__line location__line_info_firma">LearnUp</span>
+                    <span class=" location__line location__Line_info_street">Sloboda st., 5</span>
+                </div>
+                <div class="location__content">
+                    <h3 class="location__heading">When</h3>
+                    <span class="location__line location__line_info_addition">February</span>
+                    <span class="location__line location__line_info_addition">2022</span>
+                </div>
+            </div>
+            <div class="location__block">
+                <div class="location__content">
+                    <h3 class="location__heading">About the course</h3>
+                    <span class="location__line">Duration: 2 weeks.</span>
+                    <span class="location__line location__line_info_comprises">Comprises 4 2-hour modules twice a week.</span>
+                </div>
+                <div class="location__content">
+                    <span class=" location__line location__line_info_addition">COST</span>
+                    <span class="location__line location__line_info_addition">Free</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section addition">
+        <div class="header__unimportant">
+            <img src="./access/images/logo/logo_black.svg" alt="Логотип"/>
+            <h2 class="section__title">WHO</h2>
+            <span class="section__month">February 2022</span>
+        </div>
+        <button aria-label="Регистрация"
+                class="section__button-register section__button-register_place_content section__button-register_theme_orange">
+            REGISTER
+        </button>
+    </section>
+    <section class="section ready">
+        <div class="header__unimportant">
+            <img src="./access/images/logo/logo_white.svg" alt="Логотип"/>
+            <h2 class="section__title section__title_theme_white">GET READY</h2>
+            <span class="section__month section__month_theme_white">February 2022</span>
+        </div>
+        <div class="section__text section_text_theme_white">
+            <p class="section__paragraph">
+                We prepared some materials to get to know the platform. You're not obliged to study them, but it'll help
+                to learn the basics faster and easier, prepare a list of questions to lecturers, and have a more
+                productive workshop experience.
+            </p>
+        </div>
+        <ol class="ready__ol">
+            <li class="ready__list">
+                <h3 class="ready__heading">ABOUT WHAT</h3>
+                <p class="ready__description">
+                    a boring Google presentation 😜
+                </p>
+            </li>
+            <li class="ready__list">
+                <h3 class="ready__heading">FOR WHOM</h3>
+                <p class="ready__description">
+                    about Flutter here and here on Habr🤓
+                </p>
+            </li>
+            <li class="ready__list">
+                <h3 class="ready__heading">WHY</h3>
+                <p class="ready__description">
+                    Flutter documentation😭
+                </p>
+            </li>
+        </ol>
+        <button aria-label="Регистрация"
+                class="section__button-register section__button-register_place_content">
+            REGISTER
+        </button>
+    </section>
+    <section class="section organizers">
+        <div class="header__unimportant">
+            <img src="./access/images/logo/logo_black.svg" alt="Логотип"/>
+            <h2 class="section__title">ORGANIZERS</h2>
+            <button class="section__button-register section__button-register_place_header" aria-label="Регистрация">
+                REGISTER
+            </button>
+        </div>
+        <div class="section__text">
+            <p class="section__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non possimus velit.
+                Atque eveniet facere magni molestias nostrum nulla odio odit pariatur rerum sunt! A aperiam
+                architecto,
+                beatae, ea eius est expedita facere, itaque minus nam obcaecati perferendis quia quis soluta totam
+                unde
+                vero. Accusantium aperiam beatae consequatur culpa dolor, earum eius expedita fuga illo ipsa libero
+                maiores maxime molestias nulla numquam obcaecati odit praesentium sunt tenetur totam.
+            </p>
+            <p class="section__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non possimus velit.
+                Atque eveniet facere magni molestias nostrum nulla odio odit pariatur rerum sunt! A aperiam
+                architecto,
+                beatae, ea eius est expedita facere, itaque minus nam obcaecati perferendis quia quis soluta totam
+                unde
+                vero.
+            </p>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="overlay">
+        <ul class="footer__ul">
+            <li class="footer__list">
+                <a href="" title="" class="footer__anchor">
+                    <img src="./access/images/soc-network/facebook.svg" alt="facebook"/>
+                </a>
+            </li>
+            <li class="footer__list">
+                <a href="" title="footer__anchor">
+                    <img src="./access/images/soc-network/instagram.svg" alt="instagram"/>
+                </a>
+            </li>
+            <li class="footer__list">
+                <a href="" title="footer__anchor">
+                    <img src="./access/images/soc-network/in.svg" alt="in"/>
+                </a>
+            </li>
+            <li class="footer__list">Join us in social media</li>
+        </ul>
+        <button class="section__button-register section__button-register_place_header section__button-register_theme_orange" aria-label="Изучить">Explore
+            openings
+        </button>
     </div>
-    <div id="five">
-        <h2>GET READY</h2>
-        <p>We prepared some materials to get to know the platform. You're not obliged to study them,
-            but it'll help to learn the basics faster and easier, prepare a list of questions to
-            lecturers, and have a more productive workshop experience.</p> restor
-        <button>REGISTER</button>
+    <div class="footer__info">
+        <span class="footer__copy">© 2021 LearnUp</span>
+        <span class="footer__email">email@learnup.ru</span>
     </div>
-    <div id="six">
-        <h2>ORGANIZERS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non
-            possimus velit. Atque eveniet facere magni molestias nostrum nulla odio odit pariatur
-            rerum sunt! A aperiam architecto, beatae, ea eius est expedita facere, itaque minus nam
-            obcaecati perferendis quia quis soluta totam unde vero. Accusantium aperiam beatae
-            consequatur culpa dolor, earum eius expedita fuga illo ipsa libero maiores maxime
-            molestias nullas numquam obcaecati odit praesentium sunt tenetur totam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non
-            possimus velit. Atque eveniet facere magni molestias nostrum nulla odio odit pariatur
-            rerum sunt! A aperiam architecto, beatae, ea eius est expedita facere, itaque minus nam
-            obcaecati perferendis quia quis soluta totam unde vero. Accusantium aperiam beatae
-            consequatur culpa dolor, earum eius expedita fuga illo ipsa libero maiores maxime
-            molestias nulla numquam obcaecati odit praesentium sunt tenetur totam.s</p>
-    </div>
+</footer>
+<!--<script type="module" src="./pages/index.js"></script>-->
 </body>
 </html>
