@@ -1,0 +1,14 @@
+.section__button-register {
+    font-family: 'Open Sans-bold', sans-serif;
+    font-weight: 800;
+    background-color: transparent;
+    color: #4A4A4A;
+    cursor: pointer;
+    outline: none;
+    transition: transform ease .2s;
+    user-select: none;
+}
+
+.section__button-register:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,22 @@
+@import './__title/section__title';
+@import './__button-register/section__button-register';
+@import './__text/section__text';
+@import './__paragraph/section__paragraph';
+@import './__month/section__month';
+@import '__button-register/_type/_workshop/section__button-register_type_workshop';
+@import '__button-register/_place/_header/section__button-register_place_header';
+@import '__button-register/_place/_content/section__button-register_place_content';
+@import '__button-register/_theme/_white/section__button-register_theme_white';
+@import '__button-register/_theme/_orange/section__button-register_theme_orange';
+@import '__title/_theme/_white/section__title_theme_white';
+@import '__title/_type/_workshop/section__title_type_workshop';
+@import '__month/_theme/_white/section__month_theme_white';
+@import '__text/_theme/_white/section__text_theme_white';
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 130px 0;
+    flex-direction: column;
+    box-sizing: border-box;
+}

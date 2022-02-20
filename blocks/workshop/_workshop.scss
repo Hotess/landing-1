@@ -1,0 +1,12 @@
+@import './__table/workshop__table';
+@import './__cell/workshop__cell';
+@import './__image/workshop__image';
+@import './__heading/workshop__heading';
+@import './__description/workshop__description';
+
+.workshop {
+    min-height: 860px;
+    position: relative;
+    align-items: center;
+    padding-bottom: 110px;
+}

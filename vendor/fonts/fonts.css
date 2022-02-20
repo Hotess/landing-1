@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Fira Sans-regular";
+	font-weight: 400;
+	src: url("./Fira-Sans/FiraSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Fira Sans-medium";
+	font-weight: 500;
+	src: url("./Fira-Sans/FiraSans-Medium.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Fira Sans-bold";
+	font-weight: 900;
+	src: url("./Fira-Sans/FiraSans-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans-Pro-reqular";
+	font-weight: 400;
+	src: url("./Source-Sans-Pro/SourceSansPro-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans-Pro-bold";
+	font-weight: 900;
+	src: url("./Source-Sans-Pro/SourceSansPro-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Open Sans-bold";
+	font-weight: 800;
+	src: url("./Open-Sans/OpenSans-ExtraBold.ttf") format("ttf");
+}
